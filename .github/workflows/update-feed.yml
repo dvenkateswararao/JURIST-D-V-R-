@@ -1,0 +1,68 @@
+# Refreshes updates.json every day and publishes the site on GitHub Pages.
+# Save this file in your repository as:  .github/workflows/update-feed.yml
+name: Update legal feed and publish site
+
+on:
+  schedule:
+    - cron: "30 20 * * *"   # 02:00 India time (20:30 UTC), every day
+  push:
+    branches: [main]        # publishes again whenever you upload a new index.html
+  workflow_dispatch:        # lets you press "Run workflow" by hand
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Fetch feeds
+        run: python update_feed.py
+
+      - name: Save updates.json in the repository
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add updates.json
+          if git diff --cached --quiet; then
+            echo "updates.json unchanged"
+          else
+            git commit -m "Refresh legal updates"
+            git push || { git pull --rebase && git push; }
+          fi
+
+      - name: Collect the files to publish
+        run: |
+          mkdir _site
+          rsync -a --exclude '.git' --exclude '.github' --exclude '_site' \
+            --exclude 'update_feed.py' --exclude 'feeds.json' \
+            --exclude 'README-setup.md' --exclude 'update-feed.yml' ./ _site/
+
+      - uses: actions/configure-pages@v6
+
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5
