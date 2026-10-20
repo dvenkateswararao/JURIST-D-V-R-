@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19T20:58:35Z",
+  "generated_at": "2026-10-20T20:58:19Z",
   "items": [
     {
       "title": "Retired employee cannot invoke consumer jurisdiction for gratuity claim; Consumer Commission lacks jurisdiction: Kerala HC",
@@ -7,6 +7,13 @@
       "source": "SCC Online Blog: consumer",
       "group": "consumer",
       "date": "2026-07-07"
+    },
+    {
+      "title": "SAM secures successive interim orders against NHAI and MoRTH actions before Delhi High Court",
+      "url": "https://www.scconline.com/blog/post/2026/10/20/sam-secures-successive-interim-orders-against-nhai-morth-delhi-high-court/",
+      "source": "SCC Online Blog",
+      "group": "general",
+      "date": "2026-10-20"
     },
     {
       "title": "AIAC Asia ADR Week 2026: Professor Robert G. Volterra’s special lecture on arbitration’s contribution to the international rule of law",
@@ -42,13 +49,6 @@
       "source": "SCC Online Blog",
       "group": "general",
       "date": "2026-10-13"
-    },
-    {
-      "title": "Delhi High Court restrains rogue “JIO LOTTERY” websites in Reliance’s trade mark suit; Directs suspension of listed domains",
-      "url": "https://www.scconline.com/blog/post/2026/10/10/delhi-high-court-jio-lottery-websites-reliance-trademark-infringement/",
-      "source": "SCC Online Blog",
-      "group": "general",
-      "date": "2026-10-10"
     }
   ]
 }
