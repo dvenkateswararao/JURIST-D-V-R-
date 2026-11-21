@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T01:50:09Z",
+  "generated_at": "2026-11-21T01:39:08Z",
   "items": [
     {
       "title": "Retired employee cannot invoke consumer jurisdiction for gratuity claim; Consumer Commission lacks jurisdiction: Kerala HC",
@@ -7,6 +7,13 @@
       "source": "SCC Online Blog: consumer",
       "group": "consumer",
       "date": "2026-07-07"
+    },
+    {
+      "title": "Delhi High Court: Aadhaar Card Not Conclusive Proof of Date of Birth; ESIC Records Prevail in Superannuation Dispute",
+      "url": "https://www.scconline.com/blog/post/2026/11/20/delhi-hc-aadhaar-date-of-birth-esic-records-superannuation/",
+      "source": "SCC Online Blog",
+      "group": "general",
+      "date": "2026-11-20"
     },
     {
       "title": "Justice Rajesh Bindal, former Supreme Court Judge assumes office as NCLAT Chairperson",
@@ -42,13 +49,6 @@
       "source": "SCC Online Blog",
       "group": "general",
       "date": "2026-11-14"
-    },
-    {
-      "title": "Dubai Arbitration Week 2026: Experts examine key reforms reshaping the DIFC arbitration and mediation framework",
-      "url": "https://www.scconline.com/blog/post/2026/11/12/dubai-arbitration-week-2026-difc-arbitration-mediation-law-reforms/",
-      "source": "SCC Online Blog",
-      "group": "general",
-      "date": "2026-11-12"
     }
   ]
 }
