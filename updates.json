@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T01:02:06Z",
+  "generated_at": "2026-11-24T04:53:49Z",
   "items": [
     {
       "title": "Retired employee cannot invoke consumer jurisdiction for gratuity claim; Consumer Commission lacks jurisdiction: Kerala HC",
@@ -7,6 +7,13 @@
       "source": "SCC Online Blog: consumer",
       "group": "consumer",
       "date": "2026-07-07"
+    },
+    {
+      "title": "ESI wage ceiling fixed at ₹21,000 under Social Security Code; ₹25,000 limit retained for persons with disabilities",
+      "url": "https://www.scconline.com/blog/post/2026/11/23/esi-wage-ceiling-social-security-code-2026/",
+      "source": "SCC Online Blog",
+      "group": "general",
+      "date": "2026-11-23"
     },
     {
       "title": "State cannot renege on binding sale of Ballygunge land only because of change in regime: Calcutta HC",
@@ -42,13 +49,6 @@
       "source": "SCC Online Blog",
       "group": "general",
       "date": "2026-11-19"
-    },
-    {
-      "title": "Public AI tools and loss of legal privilege: Dubai Arbitration Week 2026 cautions against uploading client documents and confidential material",
-      "url": "https://www.scconline.com/blog/post/2026/11/16/seeking-legal-advice-public-ai-loss-legal-professional-privilege/",
-      "source": "SCC Online Blog",
-      "group": "general",
-      "date": "2026-11-16"
     }
   ]
 }
